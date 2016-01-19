@@ -7,7 +7,14 @@ user=
        sudo mount -t linprocfs linproc /compat/linux/proc
        mkdir -p  /home/$user/.steam/sdk32/
        sudo chmod 1777 /compat/linux/tmp
-       ln -s    /home/$user/.steam/steam/linux32/steamclient.so       /home/$user/.steam/sdk32/steamclient.so
+
+       if ! [ -f /home/$user/.steam/sdk32/steamclient.so ]; then
+
+           ln -s    /home/$user/.steam/steam/linux32/steamclient.so       /home/$user/.steam/sdk32/steamclient.so
+
+       fi
+
+       
        /home/$user/.local/share/Steam/ubuntu12_32/steam
        sudo umount /compat/linux/proc
        sudo umount /compat/linux/
