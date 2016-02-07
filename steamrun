@@ -53,7 +53,7 @@
 
        
        sudo chmod 1777 /compat/linux/dev/shm
-
+       sudo chmod 1777 /compat/linux/tmp
   
 
 
@@ -67,7 +67,7 @@
 
    fi
 
-       sudo chmod 1777 /compat/linux/tmp
+       
 
   
       if ! [ -f $HOME/.steam/steam/ubuntu12_32/steamwebhelper ]; then
