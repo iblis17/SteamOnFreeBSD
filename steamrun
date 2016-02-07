@@ -53,7 +53,20 @@
 
        
        sudo chmod 1777 /compat/linux/dev/shm
+
+  
+
+
+
+    if ! [ -d  "$HOME/.steam/sdk32/"  ]; then
+
+   
+
        mkdir -p  $HOME/.steam/sdk32/
+
+
+   fi
+
        sudo chmod 1777 /compat/linux/tmp
 
   
