@@ -2,7 +2,7 @@
 
 
 
-  #unmount  /compat/linux/proc if mounted
+  
        
       
            if  ! [  -f "$HOME/.steam/steamrun.pid" ];then
@@ -15,24 +15,24 @@
 
       fi
                  
-           fi
+            fi
 
 
 
  
 
-    if  [ -z "$(mount | grep nullfs )" ]; then 
+      if  [ -z "$(mount | grep nullfs )" ]; then 
        
-       sudo mount -t nullfs /compat/ubuntu/ /compat/linux/
+        sudo mount -t nullfs /compat/ubuntu/ /compat/linux/
 
-    fi
+      fi
 
 
-    if  [ -z "$(mount | grep linprocfs)" ]; then 
+      if  [ -z "$(mount | grep linprocfs)" ]; then 
        
-       sudo mount -t linprocfs linproc /compat/linux/proc
+         sudo mount -t linprocfs linproc /compat/linux/proc
 
-    fi
+      fi
 
       
 
@@ -41,11 +41,11 @@
 
  
 
-   if  [ -z "$(mount | grep tmpfs)" ]; then
+        if  [ -z "$(mount | grep tmpfs)" ]; then
        
-       sudo mount -t tmpfs tmpfs /compat/linux/dev/shm
+          sudo mount -t tmpfs tmpfs /compat/linux/dev/shm
                        
-   fi
+        fi
 
 
 
@@ -53,7 +53,7 @@
        
        sudo mount -t linsysfs linsys /compat/linux/sys
                        
-   fi
+    fi
 
 
 
@@ -66,12 +66,9 @@
 
     if ! [ -d  "$HOME/.steam/sdk32/"  ]; then
 
-   
-
        mkdir -p  $HOME/.steam/sdk32/
 
-
-   fi
+    fi
 
        
 
