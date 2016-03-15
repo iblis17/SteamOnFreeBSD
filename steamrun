@@ -2,37 +2,37 @@
 
 
 
-  
+  #unmount  /compat/linux/proc if mounted
        
       
            if  ! [  -f "$HOME/.steam/steamrun.pid" ];then
 
 
 
-      if  ! [ -z "$(mount | grep linprocfs)" ]; then 
+      if ! [ -z "$(mount | grep linprocfs)" ]; then 
        
        sudo   umount  /compat/linux/proc
 
       fi
                  
-            fi
+           fi
 
 
 
  
 
-      if  [ -z "$(mount | grep nullfs )" ]; then 
+    if  [ -z "$(mount | grep nullfs )" ]; then 
        
-        sudo mount -t nullfs /compat/ubuntu/ /compat/linux/
+       sudo mount -t nullfs /compat/ubuntu/ /compat/linux/
 
-      fi
+    fi
 
 
-      if  [ -z "$(mount | grep linprocfs)" ]; then 
+    if  [ -z "$(mount | grep linprocfs)" ]; then 
        
-         sudo mount -t linprocfs linproc /compat/linux/proc
+       sudo mount -t linprocfs linproc /compat/linux/proc
 
-      fi
+    fi
 
       
 
@@ -41,11 +41,11 @@
 
  
 
-        if  [ -z "$(mount | grep tmpfs)" ]; then
+   if  [ -z "$(mount | grep tmpfs)" ]; then
        
-          sudo mount -t tmpfs tmpfs /compat/linux/dev/shm
+       sudo mount -t tmpfs tmpfs /compat/linux/dev/shm
                        
-        fi
+   fi
 
 
 
@@ -53,7 +53,7 @@
        
        sudo mount -t linsysfs linsys /compat/linux/sys
                        
-    fi
+   fi
 
 
 
@@ -66,14 +66,17 @@
 
     if ! [ -d  "$HOME/.steam/sdk32/"  ]; then
 
+   
+
        mkdir -p  $HOME/.steam/sdk32/
 
-    fi
+
+   fi
 
        
 
   
-      if ! [ -f "$HOME/.steam/steam/ubuntu12_32/steamwebhelper" ]; then
+      if ! [ -f $HOME/.steam/steam/ubuntu12_32/steamwebhelper ]; then
 
            mv     $HOME/.steam/steam/ubuntu12_32/steamwebhelper.bak     $HOME/.steam/steam/ubuntu12_32/steamwebhelper
 
@@ -81,11 +84,14 @@
 
 
 
-       if ! [ -f "$HOME/.steam/sdk32/steamclient.so" ]; then
+       if ! [ -f $HOME/.steam/sdk32/steamclient.so ]; then
 
            ln -s    $HOME/.steam/steam/linux32/steamclient.so       $HOME/.steam/sdk32/steamclient.so
 
        fi
+
+
+       # use the  variable $1 like this :   ./steamrun steam://run/440 
 
               export LD_LIBRARY_PATH=$HOME/.local/share/Steam/ubuntu12_32
        
@@ -94,21 +100,31 @@
               echo $! > $HOME/.steam/steamrun.pid
 
 
-              sleep 2 
+              sleep 20
 
               mv $HOME/.steam/steam/ubuntu12_32/steamwebhelper $HOME/.steam/steam/ubuntu12_32/steamwebhelper.bak
- 
+              
+              sleep 30
     
 
    while ! [  -z "$(ps aux | grep "$HOME[/].local/share/Steam/ubuntu12_32/steam")" ] 
 
    do
-   sleep 1.5
+   sleep 1
 
    done 
  
               rm $HOME/.steam/steamrun.pid
-              mv $HOME/.steam/steam/ubuntu12_32/steamwebhelper.bak  $HOME/.steam/steam/ubuntu12_32/steamwebhelper
+   
+      if  [ -f $HOME/.steam/steam/ubuntu12_32/steamwebhelper.bak ]; then
+
+         mv $HOME/.steam/steam/ubuntu12_32/steamwebhelper.bak  $HOME/.steam/steam/ubuntu12_32/steamwebhelper
+
+      fi
+
+      
+      
+
 
 
        sudo umount -f  /compat/linux/proc
