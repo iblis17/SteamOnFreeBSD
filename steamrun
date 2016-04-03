@@ -97,9 +97,7 @@
        
               $HOME/.local/share/Steam/ubuntu12_32/steam  $1 &
               
-              sleep 5 
               
-
               echo $! > $HOME/.steam/steamrun.pid
 
 
@@ -112,9 +110,10 @@
               
     
 
-   while ! [  -z "$(ps aux | grep "$HOME[/].local/share/Steam/ubuntu12_32/steam")" ] 
+     while ! [  -z "$(ps aux | grep "$(cat $HOME/.steam/steamrun.pid)")" ] 
 
    do
+   
    sleep 1
 
    done 
