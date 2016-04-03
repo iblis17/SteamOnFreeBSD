@@ -105,18 +105,18 @@
 
               mv $HOME/.steam/steam/ubuntu12_32/steamwebhelper $HOME/.steam/steam/ubuntu12_32/steamwebhelper.bak
               
-              sleep 10
+              
               
               
     
 
      while ! [  -z "$(ps aux | grep "$(cat $HOME/.steam/steamrun.pid)")" ] 
 
-   do
+       do
    
-   sleep 1
+          sleep 1
 
-   done 
+       done 
  
               rm $HOME/.steam/steamrun.pid
    
