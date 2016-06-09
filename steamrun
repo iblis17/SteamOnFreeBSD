@@ -81,17 +81,12 @@ EOF
 
     if ! [ -d  "$HOME/.steam/sdk32/"  ]; then
 
-   
+         mkdir -p  $HOME/.steam/sdk32/
 
-       mkdir -p  $HOME/.steam/sdk32/
-
-
-   fi
+    fi
 
        
-
-  
-      if ! [ -f $HOME/.steam/steam/ubuntu12_32/steamwebhelper ]; then
+       if  [ -f $HOME/.steam/steam/ubuntu12_32/steamwebhelper.bak ]; then
 
            mv     $HOME/.steam/steam/ubuntu12_32/steamwebhelper.bak     $HOME/.steam/steam/ubuntu12_32/steamwebhelper
 
@@ -99,7 +94,7 @@ EOF
 
 
 
-       if ! [ -f $HOME/.steam/sdk32/steamclient.so ]; then
+       if ! [ -L  $HOME/.steam/sdk32/steamclient.so ]; then
 
            ln -s    $HOME/.steam/steam/linux32/steamclient.so       $HOME/.steam/sdk32/steamclient.so
 
