@@ -1,6 +1,7 @@
 #!/bin/sh
 
-     if ! [ -f $HOME/.asoundrc ]; then
+
+   if ! [ -f $HOME/.asoundrc ]; then
 
          cat <<EOF > $HOME/.asoundrc
 pcm.!default
@@ -17,12 +18,22 @@ ctl.!default {
    type oss
    device /dev/mixer
 }     
+
 EOF
+
+
+
+
 
       fi
     
 
+  
+       
+      
            if  ! [  -f "$HOME/.steam/steamrun.pid" ];then
+
+
 
       if ! [ -z "$(mount | grep linprocfs)" ]; then 
        
@@ -33,60 +44,56 @@ EOF
            fi
 
 
-
+               if [ -d /compat/ubuntu/ ] ; then  
  
 
-    if  [ -z "$(mount | grep nullfs )" ]; then 
+                           if  [ -z "$(mount | grep nullfs )" ]; then 
+    
+                               sudo mount -t nullfs /compat/ubuntu/ /compat/linux/
+
+                            fi
+
+
+                            if  [ -z "$(mount | grep linprocfs)" ]; then 
        
-       sudo mount -t nullfs /compat/ubuntu/ /compat/linux/
-
-    fi
-
-
-    if  [ -z "$(mount | grep linprocfs)" ]; then 
-       
-       sudo mount -t linprocfs linproc /compat/linux/proc
-
-    fi
+                                sudo mount -t linprocfs linproc /compat/linux/proc
+                              
+                             fi
 
       
-
-     
-
-
- 
-
-   if  [ -z "$(mount | grep tmpfs)" ]; then
+                            if  [ -z "$(mount | grep tmpfs)" ]; then
        
-       sudo mount -t tmpfs tmpfs /compat/linux/dev/shm
+                                 sudo mount -t tmpfs tmpfs /compat/linux/var/run/shm
                        
-   fi
+                             fi
 
 
 
-    if  [ -z "$(mount | grep linsysfs)" ]; then
+                              if  [ -z "$(mount | grep linsysfs)" ]; then
        
-       sudo mount -t linsysfs linsys /compat/linux/sys
+                                  sudo mount -t linsysfs linsys /compat/linux/sys
                        
-   fi
+                                fi
 
+                        sudo chmod 1777 /compat/linux/var/run/shm
+                        sudo chmod 1777 /compat/linux/tmp
 
-
-       
-       sudo chmod 1777 /compat/linux/dev/shm
-       sudo chmod 1777 /compat/linux/tmp
-  
-
+                  fi
 
 
     if ! [ -d  "$HOME/.steam/sdk32/"  ]; then
 
-         mkdir -p  $HOME/.steam/sdk32/
+   
 
-    fi
+       mkdir -p  $HOME/.steam/sdk32/
+
+
+   fi
 
        
-       if  [ -f $HOME/.steam/steam/ubuntu12_32/steamwebhelper.bak ]; then
+
+  
+      if  [ -f $HOME/.steam/steam/ubuntu12_32/steamwebhelper.bak ]; then
 
            mv     $HOME/.steam/steam/ubuntu12_32/steamwebhelper.bak     $HOME/.steam/steam/ubuntu12_32/steamwebhelper
 
@@ -94,7 +101,7 @@ EOF
 
 
 
-       if ! [ -L  $HOME/.steam/sdk32/steamclient.so ]; then
+       if ! [ -L "$HOME/.steam/sdk32/steamclient.so" ]; then
 
            ln -s    $HOME/.steam/steam/linux32/steamclient.so       $HOME/.steam/sdk32/steamclient.so
 
@@ -107,30 +114,32 @@ EOF
               export STEAM_FRAME_FORCE_CLOSE=1
        
               $HOME/.local/share/Steam/ubuntu12_32/steam  $1 &
+
               
+
               
+
               echo $! > $HOME/.steam/steamrun.pid
+
 
               sleep 5
 
-     if  [ -f $HOME/.steam/steam/ubuntu12_32/steamwebhelper ]; then
+      
+               if  [ -f $HOME/.steam/steam/ubuntu12_32/steamwebhelper ]; then
 
               mv $HOME/.steam/steam/ubuntu12_32/steamwebhelper $HOME/.steam/steam/ubuntu12_32/steamwebhelper.bak
               
-     fi
-              
-              
-              
+                fi
+             
               
     
 
-     while ! [  -z "$(ps aux | grep "$(cat $HOME/.steam/steamrun.pid)")" ] 
+   while ! [  -z "$(ps aux | grep "$(cat $HOME/.steam/steamrun.pid)")" ] 
 
-       do
-   
-          sleep 1
+   do
+   sleep 1
 
-       done 
+   done 
  
               rm $HOME/.steam/steamrun.pid
    
@@ -141,15 +150,16 @@ EOF
       fi
 
       
-      
-
-
+   if [ -d /compat/ubuntu/ ] ; then  
+  
+   
 
        sudo umount -f  /compat/linux/proc
-       sudo umount -f  /compat/linux/dev/shm
-       
+       sudo umount -f  /compat/linux/var/run/shm
        sudo umount -f  /compat/linux/sys
        sudo umount -f  /compat/linux
+
+   fi
 
       if  [  -z "$(mount | grep linprocfs )" ]; then
           sudo mount -t linprocfs linproc /compat/linux/proc
