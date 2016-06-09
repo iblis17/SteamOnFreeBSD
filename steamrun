@@ -111,10 +111,13 @@ EOF
               
               echo $! > $HOME/.steam/steamrun.pid
 
-
               sleep 5
 
+     if  [ -f $HOME/.steam/steam/ubuntu12_32/steamwebhelper ]; then
+
               mv $HOME/.steam/steam/ubuntu12_32/steamwebhelper $HOME/.steam/steam/ubuntu12_32/steamwebhelper.bak
+              
+     fi
               
               
               
