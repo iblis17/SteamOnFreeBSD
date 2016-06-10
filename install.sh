@@ -36,7 +36,7 @@ rm  -R         ubuntu/boot ubuntu/dev ubuntu/etc/fonts ubuntu/home   ubuntu/root
 
 mkdir -p                                   ubuntu/var/run/shm
 
-cp       loaders.cache                     ubuntu/usr/lib/i386-linux-gnu/gdk-pixbuf-2.0/2.10.0/
+
 cp       libflashsupport.so                ubuntu/usr/lib
 
 
@@ -53,8 +53,8 @@ ln -s  $(ls /compat/linux/usr/lib/ | grep libGL.so | head -2 | tail -n 1)       
 fetch http://pkg.freebsd.org/freebsd:11:x86:64/latest/All/linux-skype_oss_wrapper-0.1.1.txz
 tar xf linux-skype_oss_wrapper-0.1.1.txz  -C ubuntu/usr/lib    -s ",/.*/,,g" "*/libpulse.so.0"
  
-
-
+sudo chroot ubuntu /usr/lib/i386-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders \
+ >  ubuntu/usr/lib/i386-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders.cache
 
 sudo cp -R ubuntu /compat
 sudo chroot /compat/ubuntu locale-gen en_US.UTF-8

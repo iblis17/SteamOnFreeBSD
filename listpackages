@@ -17,8 +17,8 @@ pool/main/c/cups/libcups2_1.7.2-0ubuntu1.7_i386.deb
 pool/main/libp/libpng/libpng12-0_1.2.50-1ubuntu2.14.04.2_i386.deb  
 pool/main/f/fontconfig/libfontconfig1_2.11.0-0ubuntu4_i386.deb          
 pool/main/g/gdk-pixbuf/libgdk-pixbuf2.0-0_2.30.7-0ubuntu1.2_i386.deb
-pool/main/g/gdk-pixbuf/libgdk-pixbuf2.0-common_2.26.1-1ubuntu1.3_all.deb
-pool/main/t/tiff/libtiff4_3.9.5-2ubuntu1.9_i386.deb
+pool/main/t/tiff/libtiff5_4.0.3-7ubuntu0.4_i386.deb
+pool/main/x/xz-utils/liblzma5_5.1.1alpha+20120614-2ubuntu2_i386.deb
 pool/main/libj/libjpeg8-empty/libjpeg8_8c-2ubuntu7_i386.deb
 pool/main/libj/libjpeg-turbo/libjpeg-turbo8_1.1.90+svn733-0ubuntu4.3_i386.deb
 pool/main/libx/libxt/libxt6_1.1.4-1_i386.deb
@@ -150,6 +150,7 @@ pool/universe/g/gcc-3.3/libstdc++5_3.3.6-25ubuntu4_i386.deb
 pool/main/g/grep/grep_2.16-1_i386.deb
 pool/main/d/debianutils/debianutils_4.4_i386.deb
 pool/main/g/gzip/gzip_1.6-3ubuntu1_i386.deb
+
 
 
 
