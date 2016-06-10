@@ -32,8 +32,12 @@ EOF
            sudo   umount  /compat/linux/proc
 
       fi
-                 
-           fi
+
+      else   
+ 
+               exit 1
+           
+             fi
 
 
                if [ -d /compat/ubuntu/ ] ; then  
