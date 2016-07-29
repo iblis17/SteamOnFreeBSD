@@ -1,6 +1,6 @@
- FreeBSD 11.0-CURRENT
+ FreeBSD 11.0
  
- nvidia-driver
+ nvidia-driver or  xf86-video-ati
  
  
 sudo tar -zxvf steam.tar.gz  -C /
