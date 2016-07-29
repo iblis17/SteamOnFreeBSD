@@ -1,5 +1,7 @@
 #!/bin/sh
 
+ubuntu=ubuntu
+#ubuntu=ubuntu_x86_64
 
    if ! [ -f $HOME/.asoundrc ]; then
 
@@ -29,9 +31,9 @@ EOF
 
       if ! [ -z "$(mount | grep linprocfs)" ]; then 
        
-           sudo   umount  /compat/linux/proc
+           doas   umount  /compat/linux/proc
 
-      fi
+       fi
 
       else   
  
@@ -40,26 +42,26 @@ EOF
              fi
 
 
-               if [ -d /compat/ubuntu/ ] ; then  
+               if [ -d /compat/$ubuntu/ ] ; then  
  
 
                            if  [ -z "$(mount | grep nullfs )" ]; then 
     
-                               sudo mount -t nullfs /compat/ubuntu/ /compat/linux/
+                               doas mount -t nullfs /compat/$ubuntu/ /compat/linux/
 
                             fi
 
 
                             if  [ -z "$(mount | grep linprocfs)" ]; then 
        
-                                sudo mount -t linprocfs linproc /compat/linux/proc
+                                doas mount -t linprocfs linproc /compat/linux/proc
                               
                              fi
 
       
                             if  [ -z "$(mount | grep tmpfs)" ]; then
        
-                                 sudo mount -t tmpfs tmpfs /compat/linux/var/run/shm
+                                 doas mount -t tmpfs tmpfs /compat/linux/var/run/shm
                        
                              fi
 
@@ -67,12 +69,12 @@ EOF
 
                               if  [ -z "$(mount | grep linsysfs)" ]; then
        
-                                  sudo mount -t linsysfs linsys /compat/linux/sys
-                       
+                                  doas mount -t linsysfs linsys /compat/linux/sys
+
                                fi
 
-                        sudo chmod 1777 /compat/linux/var/run/shm
-                        
+                        doas chmod 1777 /compat/linux/var/run/shm
+                        doas chmod 1777 /compat/linux/tmp
 
                   fi
 
@@ -81,9 +83,19 @@ EOF
 
            mkdir -p  $HOME/.steam/sdk32/
 
-      fi
+       fi
 
-       
+      
+     if ! [ -d  "$HOME/.steam/sdk64/"  ]; then
+
+           mkdir -p  $HOME/.steam/sdk64/
+
+       fi
+
+
+
+
+ 
 
   
       if  [ -f $HOME/.steam/steam/ubuntu12_32/steamwebhelper.bak ]; then
@@ -98,7 +110,15 @@ EOF
 
             ln -s    $HOME/.steam/steam/linux32/steamclient.so       $HOME/.steam/sdk32/steamclient.so
 
-       fi
+        fi
+
+       if ! [ -L "$HOME/.steam/sdk64/steamclient.so" ]; then
+
+            ln -s    $HOME/.steam/steam/linux64/steamclient.so       $HOME/.steam/sdk64/steamclient.so
+
+        fi
+
+
 
 
        # use the  variable $1 like this :   ./steamrun steam://run/440 
@@ -134,23 +154,23 @@ EOF
 
           mv $HOME/.steam/steam/ubuntu12_32/steamwebhelper.bak  $HOME/.steam/steam/ubuntu12_32/steamwebhelper
 
-      fi
+       fi
 
       
-   if ! [ -z  "$(mount | grep ubuntu)"  ] ; then  
+   if ! [ -z  "$(mount | grep $ubuntu)"  ] ; then  
   
-       sudo umount -f  /compat/linux/proc
-       sudo umount -f  /compat/linux/var/run/shm
-       sudo umount -f  /compat/linux/sys
-       sudo umount -f  /compat/linux
+       doas umount -f  /compat/linux/proc
+       doas umount -f  /compat/linux/var/run/shm
+       doas umount -f  /compat/linux/sys
+       doas umount -f  /compat/linux
 
-   fi
+    fi
 
       if  [  -z "$(mount | grep linprocfs )" ]; then
 
-          sudo mount -t linprocfs linproc /compat/linux/proc
-      
-      fi
+          doas mount -t linprocfs linproc /compat/linux/proc
+       
+       fi
 
 
        
