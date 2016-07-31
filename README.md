@@ -3,7 +3,7 @@
  nvidia-driver or  xf86-video-ati
  
  
-sudo tar -zxvf steam.tar.gz  -C /
+ doas tar -zxvf steam.tar.gz  -C /
  
  steam
 
