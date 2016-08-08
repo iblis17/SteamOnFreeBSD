@@ -2,6 +2,7 @@
  
  nvidia-driver or  xf86-video-ati
  
+ pkg install doas 
  
  doas tar -zxvf steam.tar.gz  -C /
  
