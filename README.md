@@ -4,6 +4,12 @@
  
  pkg install doas 
  
+ create /usr/local/etc/doas.conf :
+ 
+ permit nopass keepenv yourusername 
+ 
+ 
+ 
  doas tar -zxvf steam.tar.gz  -C /
  
  steam
