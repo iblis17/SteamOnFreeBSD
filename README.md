@@ -26,7 +26,8 @@
  
  ./steamrun
 
-
+for amd64 first run install.sh then run install_x86_64.sh 
+also in script steamrun change variable ubuntu on ubuntu_x86_64
 
 ![alt tag](https://raw.githubusercontent.com/SteamOnFreeBSD/Steam/master/2016-03-15-171059_1366x768_scrot.png)
 ![alt tag](https://raw.githubusercontent.com/SteamOnFreeBSD/Steam/master/2016-04-03-030913_1366x768_scrot.png)
