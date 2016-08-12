@@ -2,6 +2,11 @@
  
  nvidia-driver or  xf86-video-ati
  
+ 
+ pkg install deb2targz
+  
+ pkg install rpm2cpio
+ 
  pkg install doas 
  
  create /usr/local/etc/doas.conf :
