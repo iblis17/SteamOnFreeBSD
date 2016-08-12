@@ -2,12 +2,15 @@
  
  You need to have a recent nvidia-driver with LINUX compatibality support or an AMD graphics card that is supported by FreeBSD. See [FreeBSD Wiki](https://wiki.freebsd.org/Graphics) for further information. 
  
+ nvidia-driver or  xf86-video-ati
  
- pkg install deb2targz
+ Dependencies:
+ 
+ 1) pkg install deb2targz
   
- pkg install rpm2cpio
+ 2) pkg install rpm2cpio
  
- pkg install doas 
+ 3) pkg install doas 
  
  create /usr/local/etc/doas.conf :
  
