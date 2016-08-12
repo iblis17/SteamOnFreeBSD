@@ -1,6 +1,6 @@
  FreeBSD 11.0
  
- nvidia-driver or  xf86-video-ati
+ You need to have a recent nvidia-driver with LINUX compatibality support or an AMD graphics card that is supported by FreeBSD. See [FreeBSD Wiki](https://wiki.freebsd.org/Graphics) for further information. 
  
  
  pkg install deb2targz
@@ -15,7 +15,7 @@
  
  
  
- doas tar -zxvf steam.tar.gz  -C /
+ Extract steam.tar.gz as root: tar -zxvf steam.tar.gz  -C /
  
  steam
 
