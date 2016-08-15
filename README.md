@@ -18,12 +18,12 @@
  
  
  
- Extract steam.tar.gz as root: tar -zxvf steam.tar.gz  -C /
- 
- steam
+ download: fetch  http://media.steampowered.com/client/installer/steam.deb 
+ deb2targz steam_latest.deb
+ Extract steam.tar.gz as root:tar -zxvf steam_latest.tar.gz -C /
 
-./install.sh
- 
+ steam
+ ./install.sh
  ./steamrun
 
 for amd64 first run install.sh then run install_x86_64.sh 
