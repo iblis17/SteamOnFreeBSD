@@ -22,7 +22,7 @@
  
  deb2targz steam.deb
  
- Extract steam.tar.gz as root:tar -zxvf steam.tar.gz -C /
+ Extract steam.tar.gz as root:  tar -zxvf steam.tar.gz -C /
 
  steam
  
