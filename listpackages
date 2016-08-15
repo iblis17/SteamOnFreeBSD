@@ -40,7 +40,8 @@ pool/main/libj/libjpeg8-empty/libjpeg8_8c-2ubuntu7_i386.deb
 pool/main/libj/libjpeg-turbo/libjpeg-turbo8_1.1.90+svn733-0ubuntu4.3_i386.deb
 pool/main/libx/libxt/libxt6_1.1.4-1_i386.deb
 pool/universe/c/crystalhd/libcrystalhd3_0.0~git20110715.fdd2f19-9ubuntu1_i386.deb
-pool/main/c/curl/libcurl3_7.35.0-1ubuntu2.6_i386.deb
+pool/main/c/curl/libcurl3_7.35.0-1ubuntu2.8_i386.deb
+pool/main/c/curl/libcurl3-gnutls_7.35.0-1ubuntu2.8_i386.deb
 pool/main/r/rtmpdump/librtmp0_2.4+20121230.gitdf6c518-1_i386.deb
 pool/main/o/openssl/libssl1.0.0_1.0.1f-1ubuntu2.19_i386.deb
 pool/main/c/cyrus-sasl2/libsasl2-2_2.1.25.dfsg1-17build1_i386.deb
@@ -96,7 +97,6 @@ pool/main/a/alsa-lib/libasound2_1.0.27.2-3ubuntu7_i386.deb
 pool/main/h/heimdal/libheimntlm0-heimdal_1.6~git20131207+dfsg-1ubuntu1_i386.deb
 pool/main/h/heimdal/libroken18-heimdal_1.6~git20131207+dfsg-1ubuntu1_i386.deb
 pool/main/s/sqlite3/libsqlite3-0_3.8.2-1ubuntu2.1_i386.deb
-pool/main/c/curl/libcurl3-gnutls_7.35.0-1ubuntu2.6_i386.deb
 pool/main/h/heimdal/libkrb5-26-heimdal_1.6~git20131207+dfsg-1ubuntu1_i386.deb
 pool/main/h/heimdal/libasn1-8-heimdal_1.6~git20131207+dfsg-1ubuntu1_i386.deb
 pool/main/h/heimdal/libhcrypto4-heimdal_1.6~git20131207+dfsg-1ubuntu1_i386.deb
