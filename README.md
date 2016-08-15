@@ -20,9 +20,9 @@
  
  download: fetch  http://media.steampowered.com/client/installer/steam.deb 
  
- deb2targz steam_latest.deb
+ deb2targz steam.deb
  
- Extract steam.tar.gz as root:tar -zxvf steam_latest.tar.gz -C /
+ Extract steam.tar.gz as root:tar -zxvf steam.tar.gz -C /
 
  steam
  
