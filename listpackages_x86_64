@@ -34,7 +34,7 @@ pool/main/c/cairo/libcairo2_1.13.0~20140204-0ubuntu1_amd64.deb
 pool/main/c/cups/libcups2_1.7.2-0ubuntu1.7_amd64.deb            
 pool/main/libp/libpng/libpng12-0_1.2.50-1ubuntu2.14.04.2_amd64.deb  
 pool/main/f/fontconfig/libfontconfig1_2.11.0-0ubuntu4_amd64.deb          
-pool/main/g/gdk-pixbuf/libgdk-pixbuf2.0-0_2.30.7-0ubuntu1.2_amd64.deb
+pool/main/g/gdk-pixbuf/libgdk-pixbuf2.0-0_2.30.7-0ubuntu1.6_amd64.deb
 pool/main/t/tiff/libtiff5_4.0.3-7ubuntu0.4_amd64.deb
 pool/main/x/xz-utils/liblzma5_5.1.1alpha+20120614-2ubuntu2_amd64.deb
 pool/main/libj/libjpeg8-empty/libjpeg8_8c-2ubuntu7_amd64.deb
@@ -43,7 +43,7 @@ pool/main/libx/libxt/libxt6_1.1.4-1_amd64.deb
 pool/universe/c/crystalhd/libcrystalhd3_0.0~git20110715.fdd2f19-9ubuntu1_amd64.deb
 pool/main/c/curl/libcurl3_7.35.0-1ubuntu2.8_amd64.deb
 pool/main/r/rtmpdump/librtmp0_2.4+20121230.gitdf6c518-1_amd64.deb
-pool/main/o/openssl/libssl1.0.0_1.0.1f-1ubuntu2.19_amd64.deb
+pool/main/o/openssl/libssl1.0.0_1.0.1f-1ubuntu2.21_amd64.deb
 pool/main/c/cyrus-sasl2/libsasl2-2_2.1.25.dfsg1-17build1_amd64.deb
 pool/main/c/cyrus-sasl2/libsasl2-modules-db_2.1.25.dfsg1-17build1_amd64.deb
 pool/main/o/openldap/libldap-2.4-2_2.4.31-1+nmu2ubuntu8.2_amd64.deb
@@ -77,7 +77,7 @@ pool/main/libx/libxss/libxss1_1.2.2-1_amd64.deb
 pool/main/g/gnutls26/libgnutls26_2.12.23-12ubuntu2.5_amd64.deb
 pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.4_amd64.deb
 pool/main/p/p11-kit/libp11-kit0_0.20.2-2ubuntu2_amd64.deb
-pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.3_amd64.deb
+pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.4_amd64.deb
 pool/main/a/avahi/libavahi-common3_0.6.31-4ubuntu1_amd64.deb
 pool/main/libg/libgpg-error/libgpg-error0_1.12-0.2ubuntu1_amd64.deb
 pool/main/a/avahi/libavahi-client3_0.6.31-4ubuntu1_amd64.deb
@@ -111,7 +111,7 @@ pool/main/l/langpack-locales/locales_2.13+git20120306-12_all.deb
 pool/main/e/eglibc/libc-bin_2.19-0ubuntu6.9_amd64.deb
 pool/main/d/dbus/dbus_1.6.18-0ubuntu4.3_amd64.deb
 pool/main/c/ca-certificates/ca-certificates_20160104ubuntu0.14.04.1_all.deb
-pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.19_amd64.deb
+pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.21_amd64.deb
 pool/universe/libs/libsdl2/libsdl2-2.0-0_2.0.2+dfsg1-3ubuntu1_amd64.deb
 pool/main/libs/libsndfile/libsndfile1_1.0.25-7ubuntu2.1_amd64.deb
 pool/main/liba/libasyncns/libasyncns0_0.8-4ubuntu2_amd64.deb
