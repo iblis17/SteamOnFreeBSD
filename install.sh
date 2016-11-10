@@ -77,7 +77,7 @@ ln -s    bash                              ubuntu/bin/sh
    
               if ! [ -f "tar/linux-c6-dri-11.0.7.txz" ]; then 
 
-                      cd tar &&  fetch   http://pkg.freebsd.org/freebsd:11:x86:64/latest/All/linux-c6-dri-11.0.7.txz && cd ../
+                      cd tar &&  fetch   http://pkg.freebsd.org/freebsd:11:x86:64/latest/All/linux-c6-dri-11.0.7_3.txz && cd ../
 
                fi
 
@@ -92,8 +92,9 @@ ln -s    bash                              ubuntu/bin/sh
           cp tar/usr/lib/libLLVM-3.6-mesa.so               ubuntu/usr/lib
 
 
-                 tar xf tar/linux-c6-dri-11.0.7.txz   -C    tar  
+                 tar xf tar/linux-c6-dri-11.0.7_3.txz   -C    tar  
                  cp -R tar/compat/linux/usr/lib             ubuntu/usr
+                 ln -s libGL.so.1.2.0                       ubuntu/usr/lib/libGL.so.1
                  ln -s libtxc_dxtn_s2tc.so.0                ubuntu/usr/lib/i386-linux-gnu/libtxc_dxtn.so 
 
         else
