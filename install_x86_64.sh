@@ -107,7 +107,7 @@ ln -s         ../lib/x86_64-linux-gnu/ld-2.19.so   $ubuntu/lib64/ld-linux-x86-64
    
               if ! [ -f "$tar/linux-c6-dri-11.0.7.txz" ]; then 
 
-                      cd $tar &&  fetch   http://pkg.freebsd.org/freebsd:11:x86:64/latest/All/linux-c6-dri-11.0.7.txz && cd ../
+                      cd $tar &&  fetch   http://pkg.freebsd.org/freebsd:11:x86:64/latest/All/linux-c6-dri-11.0.7_3.txz && cd ../
 
                fi
 
