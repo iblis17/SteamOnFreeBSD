@@ -172,7 +172,15 @@ pool/main/g/grep/grep_2.16-1_amd64.deb
 pool/main/d/debianutils/debianutils_4.4_amd64.deb
 pool/main/g/gzip/gzip_1.6-3ubuntu1_amd64.deb
 
-
+pool/main/m/mesa/libgl1-mesa-glx_10.1.0-4ubuntu5_amd64.deb
+pool/main/libx/libx11/libx11-xcb1_1.6.2-1ubuntu2_amd64.deb
+pool/main/libx/libxcb/libxcb-present0_1.10-2ubuntu1_amd64.deb
+pool/main/libx/libxcb/libxcb-sync1_1.10-2ubuntu1_amd64.deb
+pool/main/m/mesa/libglapi-mesa_10.1.0-4ubuntu5_amd64.deb
+pool/main/libx/libxshmfence/libxshmfence1_1.1-2_amd64.deb
+pool/main/libd/libdrm/libdrm2_2.4.56-1~ubuntu2_amd64.deb
+pool/main/m/mesa/libgl1-mesa-dri_10.1.0-4ubuntu5_amd64.deb
+pool/main/l/llvm-toolchain-3.4/libllvm3.4_3.4-1ubuntu3_amd64.deb
 
 
 
