@@ -34,6 +34,8 @@ Setting up SteamOnFreeBSD:
 `git clone https://github.com/SteamOnFreeBSD/SteamOnFreeBSD.git`
  
 `cd SteamOnFreeBSD`
+
+`steam`
  
 `./install.sh`
 
