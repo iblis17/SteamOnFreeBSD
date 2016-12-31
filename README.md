@@ -1,16 +1,13 @@
 # SteamOnFreeBSD
 
 ### On FreeBSD 11.0
- You need to have a recent nvidia-driver with LINUX compatibality support or an AMD graphics card that is supported by FreeBSD. See [FreeBSD Wiki](https://wiki.freebsd.org/Graphics) for further information. 
+You need to have a recent nvidia-driver with LINUX compatibality support or an AMD graphics card that is supported by FreeBSD. See [FreeBSD Wiki](https://wiki.freebsd.org/Graphics) for further information. 
  
- nvidia-driver or  xf86-video-ati
+nvidia-driver or  xf86-video-ati
  
- Dependencies:
+Dependencies:
  
- ```pkg install deb2targz 
-pkg install rpm2cpio
-pkg install doas
- ```
+`pkg install deb2targz rpm2cpio doas`
  
 Create /usr/local/etc/doas.conf :
   
@@ -40,9 +37,9 @@ Setting up SteamOnFreeBSD:
  
 `./install.sh`
 
-`./steamrun`
+For amd64 first run install.sh then run install_x86_64.sh, also in script steamrun change variable ubuntu on ubuntu_x86_64.
 
-For amd64 first run install.sh then run install_x86_64.sh, also in script steamrun change variable ubuntu on ubuntu_x86_64
+`./steamrun`
 
 ![alt tag](https://raw.githubusercontent.com/SteamOnFreeBSD/Steam/master/2016-03-15-171059_1366x768_scrot.png)
 ![alt tag](https://raw.githubusercontent.com/SteamOnFreeBSD/Steam/master/2016-04-03-030913_1366x768_scrot.png)
