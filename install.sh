@@ -33,7 +33,6 @@ if ! [ -d  "tar"  ]; then
                         fi 
                  done
 
-   
                 for DEB   in $(cat listpackages); do
                    
                     deb2targz deb/$(echo  $DEB | rev | sed -r 's/\/.+//' | rev)
@@ -59,7 +58,7 @@ mkdir -p                                   ubuntu/var/run/shm
 
      if ! [ -f "tar/libflashsupport.so" ];then 
 
-      cd tar && fetch ftp://ftp.tw.freebsd.org/pub/FreeBSD/FreeBSD/distfiles/flashplugin/9.0r31/libflashsupport.so && cd ../
+      cd tar && fetch ftp://ftp.tw.freebsd.org/pub/FreeBSD/FreeBSD/distfiles/flashplugin/9.0r48/libflashsupport.so && cd ../
    
       fi
 
@@ -109,7 +108,7 @@ ln -s    bash                              ubuntu/bin/sh
 
       if ! [ -f "tar/linux-skype_oss_wrapper-0.1.1.txz" ]; then 
 
-         cd tar && fetch http://pkg.freebsd.org/freebsd:11:x86:64/latest/All/linux-skype_oss_wrapper-0.1.1.txz && cd ../
+         cd tar && fetch http://pkg.freebsd.org/freebsd:11:x86:32/latest/All/linux-skype_oss_wrapper-0.1.1.txz && cd ../
 
         fi
 

@@ -65,7 +65,7 @@ pool/main/d/dbus-glib/libdbus-glib-1-2_0.100.2-1_amd64.deb
 pool/main/d/dbus/libdbus-1-3_1.6.18-0ubuntu4.4_amd64.deb
 pool/main/n/network-manager/libnm-glib4_0.9.8.8-0ubuntu7.1_amd64.deb
 pool/main/n/network-manager/libnm-util2_0.9.8.8-0ubuntu7.1_amd64.deb
-pool/main/n/nss/libnss3_3.23-0ubuntu0.14.04.1_amd64.deb
+pool/main/n/nss/libnss3_3.26.2-0ubuntu0.14.04.3_amd64.deb
 pool/main/n/nspr/libnspr4_4.12-0ubuntu0.14.04.1_amd64.deb
 pool/main/s/systemd/libudev1_204-5ubuntu20_amd64.deb
 pool/main/s/systemd/libgudev-1.0-0_204-5ubuntu20_amd64.deb
