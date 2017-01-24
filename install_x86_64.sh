@@ -143,17 +143,17 @@ ln -s         ../lib/x86_64-linux-gnu/ld-2.19.so   $ubuntu/lib64/ld-linux-x86-64
                  cp /compat/linux/usr/lib/$(ls /compat/linux/usr/lib/ | grep libnvidia-tls)  $ubuntu/usr/lib
                  ln -s  $(ls /compat/linux/usr/lib/ | grep libGL.so   | head -2 | tail -n 1) $ubuntu/usr/lib/libGL.so.1
 
-                            if ! [ -f "$tar/NVIDIA-Linux-x86_64-367.27.run" ]; then 
-                cd $tar && fetch http://ru.download.nvidia.com/XFree86/Linux-x86_64/367.27/NVIDIA-Linux-x86_64-367.27.run
-                chmod +x NVIDIA-Linux-x86_64-367.27.run
+                            if ! [ -f "$tar/NVIDIA-Linux-x86_64-375.26.run" ]; then 
+                cd $tar && fetch http://ru.download.nvidia.com/XFree86/Linux-x86_64/375.26/NVIDIA-Linux-x86_64-375.26.run
+                chmod +x NVIDIA-Linux-x86_64-375.26.run
                 cd ..
                              fi  
-          cd $tar &&  ./NVIDIA-Linux-x86_64-367.27.run -x
+          cd $tar &&  ./NVIDIA-Linux-x86_64-375.26.run -x
                  cd ..
-          cp    $tar/NVIDIA-Linux-x86_64-367.27/libGL.so.367.27                  $ubuntu/usr/lib/x86_64-linux-gnu
-          ln -s libGL.so.367.27                                                  $ubuntu/usr/lib/x86_64-linux-gnu/libGL.so.1
-          cp    $tar/NVIDIA-Linux-x86_64-367.27/libnvidia-tls.so.367.27          $ubuntu/usr/lib/x86_64-linux-gnu
-          cp    $tar/NVIDIA-Linux-x86_64-367.27/libnvidia-glcore.so.367.27       $ubuntu/usr/lib/x86_64-linux-gnu
+          cp    $tar/NVIDIA-Linux-x86_64-375.26/libGL.so.375.26                  $ubuntu/usr/lib/x86_64-linux-gnu
+          ln -s libGL.so.375.26                                                  $ubuntu/usr/lib/x86_64-linux-gnu/libGL.so.1
+          cp    $tar/NVIDIA-Linux-x86_64-375.26/libnvidia-tls.so.375.26          $ubuntu/usr/lib/x86_64-linux-gnu
+          cp    $tar/NVIDIA-Linux-x86_64-375.26/libnvidia-glcore.so.375.26       $ubuntu/usr/lib/x86_64-linux-gnu
    fi 
  
 
