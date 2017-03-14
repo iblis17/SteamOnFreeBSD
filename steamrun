@@ -1,7 +1,7 @@
 #!/bin/sh
 
-#ubuntu=ubuntu
-ubuntu=ubuntu_x86_64
+ubuntu=ubuntu
+#ubuntu=ubuntu_x86_64
 
    if ! [ -f $HOME/.asoundrc ]; then
 
