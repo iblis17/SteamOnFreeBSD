@@ -98,10 +98,10 @@ ln -s    bash                              ubuntu/bin/sh
 
         else
 
-                 cp /compat/linux/usr/lib/$(ls /compat/linux/usr/lib/ | grep libGL.so.3 | head -2 | tail -n 1) ubuntu/usr/lib
+                 cp /compat/linux/usr/lib/$(ls /compat/linux/usr/lib/ | grep libGL.so | head -3 | tail -n 1) ubuntu/usr/lib
                  cp /compat/linux/usr/lib/$(ls /compat/linux/usr/lib/ | grep libnvidia-glcore) ubuntu/usr/lib
                  cp /compat/linux/usr/lib/$(ls /compat/linux/usr/lib/ | grep libnvidia-tls) ubuntu/usr/lib
-                 ln -s  $(ls /compat/linux/usr/lib/ | grep libGL.so.3 | head -2 | tail -n 1)              ubuntu/usr/lib/libGL.so.1
+                 ln -s  $(ls /compat/linux/usr/lib/ | grep libGL.so | head -3 | tail -n 1)              ubuntu/usr/lib/libGL.so.1
 
    fi 
  

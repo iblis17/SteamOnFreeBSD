@@ -138,10 +138,10 @@ ln -s         ../lib/x86_64-linux-gnu/ld-2.19.so   $ubuntu/lib64/ld-linux-x86-64
 
         else
 
-                 cp /compat/linux/usr/lib/$(ls /compat/linux/usr/lib/ | grep libGL.so.3 | head -2 | tail -n 1) $ubuntu/usr/lib
+                 cp /compat/linux/usr/lib/$(ls /compat/linux/usr/lib/ | grep libGL.so | head -3 | tail -n 1) $ubuntu/usr/lib
                  cp /compat/linux/usr/lib/$(ls /compat/linux/usr/lib/ | grep libnvidia-glcore) $ubuntu/usr/lib
                  cp /compat/linux/usr/lib/$(ls /compat/linux/usr/lib/ | grep libnvidia-tls)  $ubuntu/usr/lib
-                 ln -s  $(ls /compat/linux/usr/lib/ | grep libGL.so.3   | head -2 | tail -n 1) $ubuntu/usr/lib/libGL.so.1
+                 ln -s  $(ls /compat/linux/usr/lib/ | grep libGL.so   | head -3 | tail -n 1) $ubuntu/usr/lib/libGL.so.1
 
                             if ! [ -f "$tar/NVIDIA-Linux-x86_64-375.26.run" ]; then 
                 cd $tar && fetch http://ru.download.nvidia.com/XFree86/Linux-x86_64/375.26/NVIDIA-Linux-x86_64-375.26.run
