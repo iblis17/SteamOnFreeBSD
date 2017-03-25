@@ -74,7 +74,7 @@ pool/main/libn/libnih/libnih1_1.0.3-4ubuntu25_i386.deb
 pool/main/libn/libnih/libnih-dbus1_1.0.3-4ubuntu25_i386.deb
 pool/main/g/gconf/libgconf-2-4_3.2.6-0ubuntu2_i386.deb
 pool/main/libx/libxss/libxss1_1.2.2-1_i386.deb
-pool/main/g/gnutls26/libgnutls26_2.12.23-12ubuntu2.6_i386.deb
+pool/main/g/gnutls26/libgnutls26_2.12.23-12ubuntu2.7_i386.deb
 pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.4_i386.deb
 pool/main/p/p11-kit/libp11-kit0_0.20.2-2ubuntu2_i386.deb
 pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.4_i386.deb
@@ -107,7 +107,7 @@ pool/main/libg/libglu/libglu1-mesa_9.0.0-2_i386.deb
 pool/main/a/alsa-plugins/libasound2-plugins_1.0.27-2ubuntu2_i386.deb
 pool/main/a/alsa-lib/libasound2-data_1.0.27.2-3ubuntu7_all.deb
 pool/main/l/langpack-locales/locales_2.13+git20120306-12_all.deb
-pool/main/e/eglibc/libc-bin_2.19-0ubuntu6.9_i386.deb
+pool/main/e/eglibc/libc-bin_2.19-0ubuntu6.11_i386.deb
 pool/main/d/dbus/dbus_1.6.18-0ubuntu4.4_i386.deb
 pool/main/c/ca-certificates/ca-certificates_20160104ubuntu0.14.04.1_all.deb
 pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.22_i386.deb
@@ -126,13 +126,13 @@ pool/universe/s/s2tc/libtxc-dxtn-s2tc0_0~git20110809-2_i386.deb
 pool/main/c/coreutils/coreutils_8.21-1ubuntu5.1_i386.deb
 pool/main/e/e2fsprogs/e2fsprogs_1.42.9-3ubuntu1.2_i386.deb
 pool/universe/e/elfutils/elfutils_0.158-0ubuntu5.2_i386.deb
-pool/main/f/freetype/libfreetype6_2.5.2-1ubuntu2.5_i386.deb
+pool/main/f/freetype/libfreetype6_2.5.2-1ubuntu2.6_i386.deb
 pool/main/p/pcre3/libpcre3_8.31-2ubuntu2.2_i386.deb
 pool/main/b/bash/bash_4.3-7ubuntu1.5_i386.deb
-pool/main/e/eglibc/multiarch-support_2.19-0ubuntu6.9_i386.deb
+pool/main/e/eglibc/multiarch-support_2.19-0ubuntu6.11_i386.deb
 pool/main/d/dpkg/dpkg_1.17.5ubuntu5.6_i386.deb
 pool/main/g/gcc-4.8/libstdc++6_4.8.4-2ubuntu1~14.04.3_i386.deb
-pool/main/e/eglibc/libc6_2.19-0ubuntu6.9_i386.deb
+pool/main/e/eglibc/libc6_2.19-0ubuntu6.11_i386.deb
 pool/main/b/base-files/base-files_7.2ubuntu5_i386.deb
 pool/main/b/bzip2/bzip2_1.0.6-5_i386.deb
 pool/main/f/findutils/findutils_4.4.2-7_i386.deb
