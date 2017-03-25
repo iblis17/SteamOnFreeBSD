@@ -2,6 +2,7 @@
 
 MASTER_SITES=http://de.archive.ubuntu.com/ubuntu/
 RPM_SITES=http://mirror.centos.org/centos/6.8/os/x86_64/Packages/
+UBUNTU_VERSION=14.04
 ubuntu=ubuntu_x86_64
 tar=tar_x86_64
 deb=deb_x86_64
@@ -47,7 +48,7 @@ if ! [ -d  "$tar"  ]; then
 
 
 
-                for BIN_DISTFILES in $(cat listpackages_x86_64);do
+                for BIN_DISTFILES in $(cat listpackages_$UBUNTU_VERSION"_x86_64");do
 
                         if ! [ -f $deb/$(echo  $BIN_DISTFILES | rev | sed -r 's/\/.+//' | rev) ]; then
          
@@ -58,14 +59,14 @@ if ! [ -d  "$tar"  ]; then
                  done
 
    
-                for DEB   in $(cat listpackages_x86_64); do
+                for DEB   in $(cat listpackages_$UBUNTU_VERSION"_x86_64"); do
                    
                     deb2targz $deb/$(echo  $DEB | rev | sed -r 's/\/.+//' | rev)
 
                  done
 
 
-                for TARGZ in $(cat listpackages_x86_64);do  
+                for TARGZ in $(cat listpackages_$UBUNTU_VERSION"_x86_64");do  
 
                     tar xf $deb/$(echo  $TARGZ  | rev | sed -r 's/\/.+//' | rev | sed s/.deb/.tar.*/) -C  $ubuntu 
 

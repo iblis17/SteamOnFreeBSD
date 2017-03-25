@@ -1,7 +1,7 @@
 #!/bin/sh
 
 MASTER_SITES=http://de.archive.ubuntu.com/ubuntu/
-
+UBUNTU_VERSION=14.04
 
 if ! [ -d  "ubuntu"  ]; then
 
@@ -23,7 +23,7 @@ if ! [ -d  "tar"  ]; then
        fi
 
 
-                for BIN_DISTFILES in $(cat listpackages);do
+                for BIN_DISTFILES in $(cat listpackages_$UBUNTU_VERSION);do
 
                         if ! [ -f deb/$(echo  $BIN_DISTFILES | rev | sed -r 's/\/.+//' | rev) ]; then
          
@@ -33,14 +33,14 @@ if ! [ -d  "tar"  ]; then
                         fi 
                  done
 
-                for DEB   in $(cat listpackages); do
+                for DEB   in $(cat listpackages_$UBUNTU_VERSION); do
                    
                     deb2targz deb/$(echo  $DEB | rev | sed -r 's/\/.+//' | rev)
 
                  done
 
 
-                for TARGZ in $(cat listpackages);do  
+                for TARGZ in $(cat listpackages_$UBUNTU_VERSION);do  
 
                     tar xf deb/$(echo  $TARGZ  | rev | sed -r 's/\/.+//' | rev | sed s/.deb/.tar.*/) -C  ubuntu 
 
