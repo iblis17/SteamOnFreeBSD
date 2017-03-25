@@ -142,7 +142,7 @@ EOF
               
     
 
-       while ! [  -z "$(ps aux | pgrep "$(cat $HOME/.steam/steamrun.pid)")" ] 
+       while ! [  -z "$(ps aux | grep "$(cat $HOME/.steam/steamrun.pid)")" ] 
 
                 do
                 sleep 1
