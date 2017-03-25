@@ -3,6 +3,8 @@
 MASTER_SITES=http://de.archive.ubuntu.com/ubuntu/
 UBUNTU_VERSION=14.04
 
+
+
 if ! [ -d  "ubuntu"  ]; then
 
            mkdir -p  ubuntu
