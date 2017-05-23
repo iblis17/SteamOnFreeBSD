@@ -60,7 +60,7 @@ mkdir -p                                   ubuntu/var/run/shm
 
      if ! [ -f "tar/libflashsupport.so" ];then 
 
-      cd tar && fetch ftp://ftp.tw.freebsd.org/pub/FreeBSD/FreeBSD/distfiles/flashplugin/9.0r48/libflashsupport.so && cd ../
+      cd tar && fetch ftp://ftp.urc.ac.ru/pub/OS/FreeBSD/distfiles/flashplugin/9.0r48/libflashsupport.so && cd ../
    
       fi
 
