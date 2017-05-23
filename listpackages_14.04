@@ -65,8 +65,8 @@ pool/main/d/dbus-glib/libdbus-glib-1-2_0.100.2-1_i386.deb
 pool/main/d/dbus/libdbus-1-3_1.6.18-0ubuntu4.4_i386.deb
 pool/main/n/network-manager/libnm-glib4_0.9.8.8-0ubuntu7.1_i386.deb
 pool/main/n/network-manager/libnm-util2_0.9.8.8-0ubuntu7.1_i386.deb
-pool/main/n/nss/libnss3_3.26.2-0ubuntu0.14.04.3_i386.deb
-pool/main/n/nspr/libnspr4_4.12-0ubuntu0.14.04.1_i386.deb
+pool/main/n/nss/libnss3_3.28.4-0ubuntu0.14.04.1_i386.deb
+pool/main/n/nspr/libnspr4_4.13.1-0ubuntu0.14.04.1_i386.deb
 pool/main/s/systemd/libudev1_204-5ubuntu20_i386.deb
 pool/main/s/systemd/libgudev-1.0-0_204-5ubuntu20_i386.deb
 pool/main/c/cgmanager/libcgmanager0_0.24-0ubuntu7.1_i386.deb
@@ -86,7 +86,7 @@ pool/main/libu/libunity/libunity-scopes-json-def-desktop_7.1.4+14.04.20140210-0u
 pool/main/libu/libunity/libunity-protocol-private0_7.1.4+14.04.20140210-0ubuntu1_i386.deb
 pool/main/d/dee/libdee-1.0-4_1.2.7+14.04.20140324-0ubuntu1_i386.deb
 pool/main/libd/libdbusmenu/libdbusmenu-glib4_12.10.3+14.04.20140319-0ubuntu1_i386.deb
-pool/main/i/icu/libicu52_52.1-3ubuntu0.5_i386.deb
+pool/main/i/icu/libicu52_52.1-3ubuntu0.6_i386.deb
 pool/main/f/fonts-dejavu/fonts-dejavu-core_2.34-1ubuntu1_all.deb
 pool/main/libi/libindicator/libindicator7_12.10.2+14.04.20140402-0ubuntu1_i386.deb
 pool/main/libd/libdbusmenu/libdbusmenu-gtk4_12.10.3+14.04.20140319-0ubuntu1_i386.deb
