@@ -110,7 +110,7 @@ ln -s    bash                              ubuntu/bin/sh
 
       if ! [ -f "tar/linux-skype_oss_wrapper-0.1.1.txz" ]; then 
 
-         cd tar && fetch http://pkg.freebsd.org/freebsd:11:x86:32/latest/All/linux-skype_oss_wrapper-0.1.1.txz && cd ../
+         cd tar && fetch  http://195.208.113.158/FreeBSD/PKG/freebsd%3A10%3Ax86%3A32/release_3/All/linux-skype_oss_wrapper-0.1.1.txz && cd ../
 
         fi
 
