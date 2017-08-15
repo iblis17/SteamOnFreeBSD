@@ -34,7 +34,7 @@ pool/main/c/cups/libcups2_1.7.2-0ubuntu1.7_i386.deb
 pool/main/libp/libpng/libpng12-0_1.2.50-1ubuntu2.14.04.2_i386.deb  
 pool/main/f/fontconfig/libfontconfig1_2.11.0-0ubuntu4_i386.deb          
 pool/main/g/gdk-pixbuf/libgdk-pixbuf2.0-0_2.30.7-0ubuntu1.6_i386.deb
-pool/main/t/tiff/libtiff5_4.0.3-7ubuntu0.6_i386.deb
+pool/main/t/tiff/libtiff5_4.0.3-7ubuntu0.7_i386.deb
 pool/main/x/xz-utils/liblzma5_5.1.1alpha+20120614-2ubuntu2_i386.deb
 pool/main/libj/libjpeg8-empty/libjpeg8_8c-2ubuntu7_i386.deb
 pool/main/libj/libjpeg-turbo/libjpeg-turbo8_1.1.90+svn733-0ubuntu4.3_i386.deb
@@ -46,7 +46,7 @@ pool/main/r/rtmpdump/librtmp0_2.4+20121230.gitdf6c518-1_i386.deb
 pool/main/o/openssl/libssl1.0.0_1.0.1f-1ubuntu2.22_i386.deb
 pool/main/c/cyrus-sasl2/libsasl2-2_2.1.25.dfsg1-17build1_i386.deb
 pool/main/c/cyrus-sasl2/libsasl2-modules-db_2.1.25.dfsg1-17build1_i386.deb
-pool/main/o/openldap/libldap-2.4-2_2.4.31-1+nmu2ubuntu8.2_i386.deb
+pool/main/o/openldap/libldap-2.4-2_2.4.31-1+nmu2ubuntu8.4_i386.deb
 pool/main/p/pango1.0/libpango-1.0-0_1.36.3-1ubuntu1_i386.deb             
 pool/main/p/pango1.0/libpangocairo-1.0-0_1.36.3-1ubuntu1_i386.deb        
 pool/main/p/pango1.0/libpangoft2-1.0-0_1.36.3-1ubuntu1_i386.deb          
@@ -54,7 +54,7 @@ pool/main/p/pixman/libpixman-1-0_0.30.2-2ubuntu1.1_i386.deb
 pool/main/h/harfbuzz/libharfbuzz0b_0.9.27-1_i386.deb
 pool/main/g/graphite2/libgraphite2-3_1.3.6-1ubuntu0.14.04.1_i386.deb
 pool/main/libt/libthai/libthai0_0.1.20-3_i386.deb
-pool/main/e/expat/libexpat1_2.1.0-4ubuntu1.3_i386.deb
+pool/main/e/expat/libexpat1_2.1.0-4ubuntu1.4_i386.deb
 pool/main/libd/libdatrie/libdatrie1_0.2.8-1_i386.deb
 pool/universe/o/openal-soft/libopenal1_1.14-4ubuntu1_i386.deb
 pool/main/a/alsa-lib/libasound2_1.0.27.2-3ubuntu7_i386.deb
@@ -65,7 +65,7 @@ pool/main/d/dbus-glib/libdbus-glib-1-2_0.100.2-1_i386.deb
 pool/main/d/dbus/libdbus-1-3_1.6.18-0ubuntu4.4_i386.deb
 pool/main/n/network-manager/libnm-glib4_0.9.8.8-0ubuntu7.1_i386.deb
 pool/main/n/network-manager/libnm-util2_0.9.8.8-0ubuntu7.1_i386.deb
-pool/main/n/nss/libnss3_3.28.4-0ubuntu0.14.04.1_i386.deb
+pool/main/n/nss/libnss3_3.28.4-0ubuntu0.14.04.2_i386.deb
 pool/main/n/nspr/libnspr4_4.13.1-0ubuntu0.14.04.1_i386.deb
 pool/main/s/systemd/libudev1_204-5ubuntu20_i386.deb
 pool/main/s/systemd/libgudev-1.0-0_204-5ubuntu20_i386.deb
@@ -74,10 +74,10 @@ pool/main/libn/libnih/libnih1_1.0.3-4ubuntu25_i386.deb
 pool/main/libn/libnih/libnih-dbus1_1.0.3-4ubuntu25_i386.deb
 pool/main/g/gconf/libgconf-2-4_3.2.6-0ubuntu2_i386.deb
 pool/main/libx/libxss/libxss1_1.2.2-1_i386.deb
-pool/main/g/gnutls26/libgnutls26_2.12.23-12ubuntu2.7_i386.deb
-pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.4_i386.deb
+pool/main/g/gnutls26/libgnutls26_2.12.23-12ubuntu2.8_i386.deb
+pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.5_i386.deb
 pool/main/p/p11-kit/libp11-kit0_0.20.2-2ubuntu2_i386.deb
-pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.4_i386.deb
+pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.5_i386.deb
 pool/main/a/avahi/libavahi-common3_0.6.31-4ubuntu1_i386.deb
 pool/main/libg/libgpg-error/libgpg-error0_1.12-0.2ubuntu1_i386.deb
 pool/main/a/avahi/libavahi-client3_0.6.31-4ubuntu1_i386.deb
@@ -107,12 +107,12 @@ pool/main/libg/libglu/libglu1-mesa_9.0.0-2_i386.deb
 pool/main/a/alsa-plugins/libasound2-plugins_1.0.27-2ubuntu2_i386.deb
 pool/main/a/alsa-lib/libasound2-data_1.0.27.2-3ubuntu7_all.deb
 pool/main/l/langpack-locales/locales_2.13+git20120306-12_all.deb
-pool/main/e/eglibc/libc-bin_2.19-0ubuntu6.11_i386.deb
+pool/main/e/eglibc/libc-bin_2.19-0ubuntu6.13_i386.deb
 pool/main/d/dbus/dbus_1.6.18-0ubuntu4.4_i386.deb
 pool/main/c/ca-certificates/ca-certificates_20160104ubuntu0.14.04.1_all.deb
 pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.22_i386.deb
 pool/universe/libs/libsdl2/libsdl2-2.0-0_2.0.2+dfsg1-3ubuntu1_i386.deb
-pool/main/libs/libsndfile/libsndfile1_1.0.25-7ubuntu2.1_i386.deb
+pool/main/libs/libsndfile/libsndfile1_1.0.25-7ubuntu2.2_i386.deb
 pool/main/liba/libasyncns/libasyncns0_0.8-4ubuntu2_i386.deb
 pool/main/f/flac/libflac8_1.3.0-2ubuntu0.14.04.1_i386.deb
 pool/main/libv/libvorbis/libvorbis0a_1.3.2-1.3ubuntu1_i386.deb
@@ -129,10 +129,10 @@ pool/universe/e/elfutils/elfutils_0.158-0ubuntu5.2_i386.deb
 pool/main/f/freetype/libfreetype6_2.5.2-1ubuntu2.8_i386.deb
 pool/main/p/pcre3/libpcre3_8.31-2ubuntu2.2_i386.deb
 pool/main/b/bash/bash_4.3-7ubuntu1.7_i386.deb
-pool/main/e/eglibc/multiarch-support_2.19-0ubuntu6.11_i386.deb
+pool/main/e/eglibc/multiarch-support_2.19-0ubuntu6.13_i386.deb
 pool/main/d/dpkg/dpkg_1.17.5ubuntu5.6_i386.deb
 pool/main/g/gcc-4.8/libstdc++6_4.8.4-2ubuntu1~14.04.3_i386.deb
-pool/main/e/eglibc/libc6_2.19-0ubuntu6.11_i386.deb
+pool/main/e/eglibc/libc6_2.19-0ubuntu6.13_i386.deb
 pool/main/b/base-files/base-files_7.2ubuntu5_i386.deb
 pool/main/b/bzip2/bzip2_1.0.6-5_i386.deb
 pool/main/f/findutils/findutils_4.4.2-7_i386.deb
