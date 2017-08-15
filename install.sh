@@ -1,7 +1,7 @@
 #!/bin/sh
 
 MASTER_SITES=http://de.archive.ubuntu.com/ubuntu/
-UBUNTU_VERSION=14.04
+UBUNTU_VERSION=16.10
 
 
 

@@ -70,7 +70,7 @@ pool/main/f/fontconfig/libfontconfig1_2.11.94-0ubuntu2_i386.deb
 pool/main/g/gdk-pixbuf/libgdk-pixbuf2.0-0_2.34.0-1ubuntu2_i386.deb
 
 
-pool/main/t/tiff/libtiff5_4.0.6-2ubuntu0.1_i386.deb
+pool/main/t/tiff/libtiff5_4.0.6-2ubuntu0.2_i386.deb
 pool/main/x/xz-utils/liblzma5_5.1.1alpha+20120614-2.1ubuntu1_i386.deb
 
 pool/main/libj/libjpeg8-empty/libjpeg8_8c-2ubuntu8_i386.deb
@@ -132,7 +132,7 @@ pool/main/n/network-manager/libnm-glib4_1.2.4-0ubuntu1_i386.deb
 pool/main/n/network-manager/libnm-util2_1.2.4-0ubuntu1_i386.deb
 
 
-pool/main/n/nss/libnss3_3.26.2-0ubuntu0.16.10.1_i386.deb
+pool/main/n/nss/libnss3_3.28.4-0ubuntu0.16.04.2_i386.deb
 pool/main/n/nspr/libnspr4_4.12-2ubuntu1_i386.deb
 
 pool/main/s/systemd/libudev1_231-9git1_i386.deb
@@ -184,7 +184,7 @@ pool/main/libd/libdbusmenu/libdbusmenu-gtk4_16.04.1+16.10.20160927.2-0ubuntu1_i3
 pool/main/liba/libappindicator/libappindicator1_12.10.1+16.10.20160905-0ubuntu1_i386.deb
 
 
-pool/universe/j/jasper/libjasper1_1.900.1-debian1-2.4+deb8u2build0.16.10.1_i386.deb
+pool/universe/j/jasper/libjasper1_1.900.1-debian1-2.4ubuntu1.1_i386.deb
 pool/main/h/heimdal/libgssapi3-heimdal_1.7~git20150920+dfsg-4ubuntu1_i386.deb
 
 pool/main/a/alsa-lib/libasound2_1.1.2-1_i386.deb
@@ -250,7 +250,7 @@ pool/main/e/e2fsprogs/e2fsprogs_1.43.3-1_i386.deb
 pool/universe/e/elfutils/elfutils_0.166-2ubuntu1_i386.deb
 
 
-pool/main/f/freetype/libfreetype6_2.6.3-3ubuntu1.1_i386.deb
+pool/main/f/freetype/libfreetype6_2.6.1-0.1ubuntu2.3_i386.deb
 pool/main/p/pcre3/libpcre3_8.39-2_i386.deb
 
 pool/main/b/bash/bash_4.3-15ubuntu1_i386.deb
