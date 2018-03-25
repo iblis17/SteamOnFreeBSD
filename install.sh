@@ -1,7 +1,11 @@
 #!/bin/sh
 
 MASTER_SITES=http://de.archive.ubuntu.com/ubuntu/
+<<<<<<< HEAD
+UBUNTU_VERSION=17.10
+=======
 UBUNTU_VERSION=16.10
+>>>>>>> bd2e7181ad80f675661a65d358252a32e4ddce50
 
 
 
@@ -58,11 +62,15 @@ mkdir -p                                   ubuntu/var/run/shm
    
 
 
-     if ! [ -f "tar/libflashsupport.so" ];then 
+   #  if ! [ -f "tar/libflashsupport.so" ];then 
 
+<<<<<<< HEAD
+   #  cd tar && fetch ftp://ftp.tw.freebsd.org/pub/FreeBSD/FreeBSD/distfiles/flashplugin/9.0r48/libflashsupport.so && cd ../
+=======
       cd tar && fetch ftp://ftp.urc.ac.ru/pub/OS/FreeBSD/distfiles/flashplugin/9.0r48/libflashsupport.so && cd ../
+>>>>>>> bd2e7181ad80f675661a65d358252a32e4ddce50
    
-      fi
+   #  fi
 
  
 cp       tar/libflashsupport.so            ubuntu/usr/lib
@@ -126,6 +134,7 @@ doas chroot ubuntu /usr/lib/i386-linux-gnu/gdk-pixbuf-2.0/gdk-pixbuf-query-loade
 du -a ubuntu/usr/share/ca-certificates | sed 's/ubuntu\/usr\/share\/ca-certificates\///' |  awk '{print $2}' \
  >>  ubuntu/etc/ca-certificates.conf
 
+doas sysctl compat.linux.osrelease=3.6.38
 
 doas cp -R  ubuntu /compat
 doas chroot /compat/ubuntu locale-gen en_US.UTF-8
