@@ -1,11 +1,9 @@
 #!/bin/sh
 
 MASTER_SITES=http://de.archive.ubuntu.com/ubuntu/
-<<<<<<< HEAD
+
 UBUNTU_VERSION=17.10
-=======
-UBUNTU_VERSION=16.10
->>>>>>> bd2e7181ad80f675661a65d358252a32e4ddce50
+
 
 
 
@@ -64,11 +62,9 @@ mkdir -p                                   ubuntu/var/run/shm
 
    #  if ! [ -f "tar/libflashsupport.so" ];then 
 
-<<<<<<< HEAD
+
    #  cd tar && fetch ftp://ftp.tw.freebsd.org/pub/FreeBSD/FreeBSD/distfiles/flashplugin/9.0r48/libflashsupport.so && cd ../
-=======
-      cd tar && fetch ftp://ftp.urc.ac.ru/pub/OS/FreeBSD/distfiles/flashplugin/9.0r48/libflashsupport.so && cd ../
->>>>>>> bd2e7181ad80f675661a65d358252a32e4ddce50
+
    
    #  fi
 
