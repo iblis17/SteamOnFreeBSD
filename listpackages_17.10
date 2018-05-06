@@ -215,7 +215,7 @@ pool/main/d/dbus/dbus_1.10.22-1ubuntu1_i386.deb
 pool/main/c/ca-certificates/ca-certificates_20170717_all.deb
 
 
-pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.3_i386.deb
+pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.5_i386.deb
 pool/universe/libs/libsdl2/libsdl2-2.0-0_2.0.6+dfsg1-3ubuntu1_i386.deb
 
 pool/main/libs/libsndfile/libsndfile1_1.0.28-4_i386.deb
